@@ -1,12 +1,53 @@
-<html>
-  <head>
-  </head>
-  <body>
-    <p>Hello World!ss</p>
-    
-  <input type="checkbox" name="vehicle" value="Bike"> I have a bike<br>
-  <input type="checkbox" name="vehicle" value="Car" checked> I have a car<br>
-  <input type="submit" value="Submit">
 
-  </body>
+<html>
+<head>
+<title> New Document </title>
+
+<SCRIPT LANGUAGE="JavaScript">
+function check(field)
+{
+    var test = "kadgar.net/live"
+	if (document.getElementById("BuffaloPrime").checked==true){
+        test+="/BuffaloPrime";
+    }
+    if (document.getElementById("MiniKitty").checked==true){
+        test+="/MiniKitty";
+    }
+    if (document.getElementById("SniperKing").checked==true){
+        test+="/SniperKing";
+    }
+    if (document.getElementById("Bird650").checked==true){
+        test+="/Bird650";
+    }
+    if (document.getElementById("Xwater").checked==true){
+        test+="/Xwater";
+    }
+    if (document.getElementById("TonesBalones").checked==true){
+        test+="/TonesBalones";
+    }
+    if (document.getElementById("kungfufruitcup").checked==true){
+        test+="/kungfufruitcup";
+    }
+    if (document.getElementById("P4ntz").checked==true){
+        test+="/P4ntz";
+    }
+    document.write(test + "                    press refresh to generate new URL");
+}
+</script>
+</head>
+<body>
+<form name="myform" action="" method="post">
+<b>Your Enter Streamers You Would Like to Watch</b><br>
+<input type="checkbox" name="list" id="BuffaloPrime" >BuffaloPrime<br>
+<input type="checkbox" name="list" id="MiniKitty">MiniKitty<br>
+<input type="checkbox" name="list"id="SniperKing">SniperKing<br>
+<input type="checkbox" name="list" id="Bird650">Bird650<br>
+<input type="checkbox" name="list" id="Xwater">Xwater<br>
+    <input type="checkbox" name="list" id="TonesBalones">TonesBalones<br>
+    <input type="checkbox" name="list" id="kungfufruitcup">kungfufruitcup<br>
+    <input type="checkbox" name="list" id="P4ntz">P4ntz<br>
+<input type="button" name="commit" value="Submit" onClick="check(document.myform.list)"/>
+<br>
+</form>
+</body>
 </html>
